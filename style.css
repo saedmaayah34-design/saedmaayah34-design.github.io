@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 22px;
+    color: #222;
+    background-color: #f7f7f7;
+    line-height: 1.7;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    background-color: #111;
+    padding: 14px 18px;
+    border-radius: 6px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #bdbdbd;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #111;
+}
+
+h1 {
+    margin-top: 28px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #111;
+}
+
+h2 {
+    margin-top: 28px;
+}
+
+p, ul, table, form, body > img {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 14px;
+}
+
+ul {
+    padding-left: 38px;
+}
+
+li {
+    padding: 3px 0;
+}
+
+img {
+    display: block;
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #d5d5d5;
+    padding: 11px;
+    text-align: left;
+}
+
+th {
+    color: #fff;
+    background-color: #111;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #111;
+}
+
+table a:hover {
+    text-decoration: none;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #555;
+    border-color: #111;
+}
+
+button {
+    margin-top: 18px;
+    padding: 10px 22px;
+    color: #fff;
+    background-color: #111;
+    border: 1px solid #111;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 15px auto;
+        padding: 0 12px;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
